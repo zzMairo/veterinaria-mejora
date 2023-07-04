@@ -14,10 +14,10 @@ document.getElementById('header').innerHTML=`<nav class="navbar navbar-expand-sm
               <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="productos.html">Productos</a>
-                  <a class="dropdown-item" href="#">Action 2</a>
+                  <a class="dropdown-item" href="productos.html">Admin</a>
+                  <a class="dropdown-item" href="alimentos.html">Alimento</a>
               </div>
           </li>
       </ul>
