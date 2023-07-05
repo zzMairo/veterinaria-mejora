@@ -15,34 +15,26 @@ createApp({
                 .then(response => response.json())
                 .then(data => {
                     this.productos = data;
-                    this.cargando = false;
-                    console.log(data[0]);
+                    console.log(this.productos);
                 })
                 .catch(err => {
                     console.log(err);
                     this.error = true;
                 })
-        },
-
-
-        Eliminar(id) {
-            const url = "http://127.0.0.1:5000/productos/" + id;
-            let options = {
-                method: 'DELETE'
-            }
-            fetch(url, options)  /* envia la url y el metodo "DELETE" para eliminar en app.py */
-                .then(response => response.json())
-                .then(data => {
-                    location.reload();  /* recarga el html */
-                })
-                .catch(err => {
-                    console.log(err)
-                })
         }
-
-
     },
+
+    computed: {
+        datosFiltrados() {
+            const clave = 'JUGUETE';
+            return this.productos.filter(dato => dato.categoria === clave);
+        }
+    },
+
     created() {
         this.fetchData(this.url);
     }
+
 }).mount('#app')
+
+  

@@ -24,12 +24,12 @@
             <section v-else>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3" v-for="p in productos">
+                        <div class="col-md-3" v-for="(p, index) in datosFiltrados" :key="index">
                             <div class="card" style="margin: 1rem;">
                                 <img :src="p.imagen" class="card-img-top" :alt="p.nombre">
                                 <div class="card-body">
                                     <h5 class="card-title">{{p.nombre}}</h5>
-                                    <p class="card-text">Descripción breve del producto 1.</p>
+                                    <p class="card-text">{{p.descripcion}}</p>
                                     <p class="card-text">Precio: ${{p.precio}}</p>
                                     <button class="btn btn-primary">Comprar</button>
                                 </div>
@@ -54,7 +54,7 @@
     <!-- My propio js main y para Vue -->
     <script src="./js/main.js"></script>
     <!-- conecta la API a este html -->
-    <script src="./js/productos.js"></script>
+    <script src="./js/alimento.js"></script>
 </body>
 
 </html>

@@ -30,6 +30,8 @@
                                 <th scope="col">Precio</th>
                                 <th scope="col">Stock</th>
                                 <th scope="col">Imagen</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Descripcion</th>
                                 <th scope="col">Acciones</th>
                             </tr>
                         </thead>
@@ -42,9 +44,11 @@
                                 <td>
                                     <img :src="p.imagen" :alt="p.nombre" width="80" height="80">
                                 </td>
+                                <td>{{p.categoria}}</td>
+                                <td>{{p.descripcion}}</td>
                                 <td>
-                                    <a class="btn btn-primary" href="producto_editar.html">Editar</a>
-                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                    <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id">Editar</a>
+                                    <button type="button" class="btn btn-danger" v-on:click="Eliminar(p.id)">Eliminar</button>
                                 </td>
                             </tr>
                         </tbody>
