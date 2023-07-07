@@ -36,7 +36,7 @@ function modificar(){
         descripcion: d
     };
 
-    let url = "http://mario12.pythonanywhere.com/productos/"+id;
+    let url = "https://mario12.pythonanywhere.com/productos/"+id;
 
     let options = {
         body: JSON.stringify(producto),

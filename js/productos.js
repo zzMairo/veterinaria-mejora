@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             productos: [],
-            url: "http://mario12.pythonanywhere.com/productos",
+            url: "https://mario12.pythonanywhere.com/productos",
             cargando: true,
             error: false
         }
@@ -26,7 +26,7 @@ createApp({
 
 
         Eliminar(id) {
-            const url = "http://mario12.pythonanywhere.com/productos/" + id;
+            const url = "https://mario12.pythonanywhere.com/productos/" + id;
             let options = {
                 method: 'DELETE'
             }
