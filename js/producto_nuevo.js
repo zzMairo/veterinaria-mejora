@@ -32,4 +32,19 @@ function guardar(){
         alert('no puedo guardarse el nuevo producto');
         console.log(err);
     })
+
 }
+function mostrarImagen() {
+    const urlInput = document.getElementById('imagen');
+    const imageContainer = document.getElementById('imageContainer');
+    const imageUrl = urlInput.value;
+    
+    if (imageUrl) {
+      const imgElement = document.createElement('img');
+      imgElement.src = imageUrl;
+      imageContainer.innerHTML = '';
+      imageContainer.appendChild(imgElement);
+    } else {
+      imageContainer.innerHTML = '';
+    }
+  }

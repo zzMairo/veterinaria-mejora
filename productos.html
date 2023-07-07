@@ -25,7 +25,7 @@
             <section v-else>
                 <div class="table-responsive" style="margin-top: 1rem;">
                     <table class="table table-bordered">
-                        <thead>
+                        <thead class="thead">
                             <tr>
                                 <th scope="col">Id</th>
                                 <th scope="col">Nombre</th>
@@ -38,7 +38,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="" v-for="p in productos"> 
+                            <tr class="tbody" v-for="p in productos"> 
                                 <td scope="row">{{p.id}}</td>
                                 <td>{{p.nombre}}</td>
                                 <td>{{p.precio}}</td>
@@ -48,7 +48,7 @@
                                 </td>
                                 <td>{{p.categoria}}</td>
                                 <td>{{p.descripcion}}</td>
-                                <td>
+                                <td class="acciones">
                                     <a class="btn btn-primary" :href="'producto_editar.html?id='+p.id+'&nombre='+p.nombre+'&precio='+p.precio+'&stock='+p.stock+'&imagen='+p.imagen+'&categoria='+p.categoria+'&descripcion='+p.descripcion">Editar</a>
                                     <button type="button" class="btn btn-danger"
                                         v-on:click="Eliminar(p.id)">Eliminar</button>

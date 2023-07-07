@@ -21,11 +21,11 @@ document.getElementById('header').innerHTML = `<nav class="navbar navbar-expand-
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
                   <a class="dropdown-item" href="productos.html">Admin</a>
-                  <a class="dropdown-item" href="alimentos.html" onclick="setCategoria('ALIMENTO')">Alimento</a>
-                  <a class="dropdown-item" href="alimentos.html" onclick="setCategoria('ROPA')">Ropa</a>
-                  <a class="dropdown-item" href="alimentos.html" onclick="setCategoria('JUGUETE')">Juguete</a>
-                  <a class="dropdown-item" href="alimentos.html" onclick="setCategoria('SALUD')">Salud</a>
-                  <a class="dropdown-item" href="alimentos.html" onclick="setCategoria('ACCESORIO')">Accesorios</a>
+                  <a class="dropdown-item" href="alimentos.html" data-value="ALIMENTO">Alimento</a>
+                  <a class="dropdown-item" href="alimentos.html" data-value="SALUD">Salud</a>
+                  <a class="dropdown-item" href="alimentos.html" data-value="ROPA">Ropa</a>
+                  <a class="dropdown-item" href="alimentos.html" data-value="JUGUETE">Juguetes</a>
+                  <a class="dropdown-item" href="alimentos.html" data-value="ACCESORIOS">Accesorios</a>
               </div>
           </li>
           <li class="nav-item">
@@ -39,7 +39,7 @@ document.getElementById('header').innerHTML = `<nav class="navbar navbar-expand-
   </div>
 </div>
 </nav>`;
-document.getElementById('footer').innerHTML =`<div class="container">
+document.getElementById('footer').innerHTML = `<div class="container">
             <div class="row">
               <div class="col-md-6">
                 <h5>Información de contacto</h5>
