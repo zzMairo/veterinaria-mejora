@@ -15,7 +15,7 @@ function guardar(){
         descripcion: d
     };
 
-    let url = "http://127.0.0.1:5000/productos";
+    let url = "http://mario12.pythonanywhere.com/productos";
 
     let options = {
         body: JSON.stringify(producto),

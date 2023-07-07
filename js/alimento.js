@@ -1,10 +1,10 @@
 const { createApp } = Vue
 
-createApp({
+createApp({ 
     data() {
         return {
             productos: [],
-            url: "http://127.0.0.1:5000/productos",
+            url: "http://mario12.pythonanywhere.com/productos",
             cargando: true,
             error: false
         }

@@ -36,7 +36,7 @@ function modificar(){
         descripcion: d
     };
 
-    let url = "http://127.0.0.1:5000/productos/"+id;
+    let url = "http://mario12.pythonanywhere.com/productos/"+id;
 
     let options = {
         body: JSON.stringify(producto),

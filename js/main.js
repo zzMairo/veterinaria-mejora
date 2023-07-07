@@ -14,7 +14,7 @@ document.getElementById('header').innerHTML = `<nav class="navbar navbar-expand-
               <a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="servicios.html">Servicios</a>
           </li>
           
           <li class="nav-item dropdown">
@@ -29,7 +29,7 @@ document.getElementById('header').innerHTML = `<nav class="navbar navbar-expand-
               </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Contactenos</a>
+              <a class="nav-link" href="contacto.html">Contactenos</a>
           </li>
       </ul>
       <form class="d-flex my-2 my-lg-0">
@@ -51,8 +51,8 @@ document.getElementById('footer').innerHTML =`<div class="container">
                 <ul class="list-unstyled">
                   <li><a href="index.html">Inicio</a></li>
                   <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                  <li><a href="#">Servicios</a></li>
-                  <li><a href="#">Contacto</a></li>
+                  <li><a href="servicio.html">Servicios</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
                 </ul>
               </div>
             </div>
