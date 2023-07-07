@@ -15,7 +15,7 @@ function guardar(){
         descripcion: d
     };
 
-    let url = "http://mario12.pythonanywhere.com/productos";
+    let url = "https://mario12.pythonanywhere.com/productos";
 
     let options = {
         body: JSON.stringify(producto),
